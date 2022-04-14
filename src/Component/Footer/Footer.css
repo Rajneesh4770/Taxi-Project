@@ -1,0 +1,20 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white !important; 
+    width: 100%;
+}
+h5{
+    text-decoration: underline;
+    
+    text-underline-position: from-font;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    
+}
+ul li{
+    list-style: none;
+}
+.items{
+    text-align: center !important;
+}

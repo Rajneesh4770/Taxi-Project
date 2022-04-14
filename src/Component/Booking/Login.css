@@ -1,0 +1,13 @@
+.background{
+    /* background: url('D:\ReactPrograms\project1\src\Component\assets\Blurred-Picture-Captions.jpg'); */
+    background-color: black;
+    border-radius: 0.5%;
+    padding: 50px 0px;
+}
+form{
+    display: inline-grid;
+    color: white;
+}
+.image123{
+    height: 50%;
+}

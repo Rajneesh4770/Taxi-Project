@@ -1,0 +1,26 @@
+
+.navbar1{
+    background-color: #FFC61A;
+    font-size: 20px;
+    position: fixed;
+}
+
+.btn1{
+    margin-left: 0%;
+}
+li.nav-item{
+    list-style-type: none;
+}
+.navbar-brand{
+    font-size: 26px !important;
+}
+.animate__animated.animate__flipOutY.animate__infinite  {
+    --animate-duration: 5s;
+    color: black !important;
+    --animate-delay: 0.9s;
+    --animate__fast:	800ms;
+    --animate__infinite	:infinite;
+}
+.nav-link:hover{
+    color: darkgreen !important;
+}
