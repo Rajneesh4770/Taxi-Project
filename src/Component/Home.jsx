@@ -21,17 +21,17 @@ function Home() {
             <div className="row">
               <div className="col-lg-4">
                 <div class="card">
-                  <img src={etios} class="card-img-top" alt="..." />
+                 <div className="imgClass"> <img src={etios} class="card-img-top" alt="..." /></div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div class="card">
-                  <img src={swift} class="card-img-top" alt="..." />
+                <div className="imgClass"> <img src={swift} class="card-img-top" alt="..." /></div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div class="card">
-                  <img src={innova} class="card-img-top" alt="..." />
+                <div className="imgClass">  <img src={innova} class="card-img-top" alt="..." /></div>
                 </div>
               </div>
               

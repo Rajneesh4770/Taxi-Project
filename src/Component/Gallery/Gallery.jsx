@@ -8,7 +8,7 @@ function Gallery() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-lg-4  col-sm-12">
             <div class="card">
               <img src={innova} class="card-img-top" alt="..." />
               <div class="card-body">
@@ -33,7 +33,7 @@ function Gallery() {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4  col-sm-12">
             <div class="card">
               <img src={swift} class="card-img-top" alt="..." />
               <div class="card-body">
@@ -59,7 +59,7 @@ function Gallery() {
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-lg-4  col-sm-12">
             <div class="card">
               <img src={etios} class="card-img-top" alt="..." />
               <div class="card-body">

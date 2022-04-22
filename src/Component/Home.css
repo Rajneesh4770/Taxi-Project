@@ -2,8 +2,9 @@
     background: url('./assets/lexi-anderson-G8wPrJyNqWQ-unsplash.jpg');
     width: 100%; 
     background-size: cover;
-     
+    
     display: unset;
+    overflow: hidden;
 }
 .animate__animated.animate__zoomIn.animate__repeat-2  {
     --animate-duration: 5s;
@@ -19,7 +20,9 @@
     width: 300px;
 }
 @media (min-width:1200px) {
-    
+    .card-img-overlay{
+        font-size: inherit;
+    }
 }
 /* .card {
     position: relative;
@@ -37,7 +40,8 @@
          border: none !important;
      }
 .card :hover{
-    width: 105%;
+    width: 102%;
+    overflow: hidden;
 }
 .section2 h1{
     color: #FFC61A;
@@ -67,4 +71,16 @@
     /* max-width: fit-content; */
     
 /* } */
-
+@media(min-width:320px){
+    .card-img-overlay{
+        font-size: 14px;
+    }
+}
+@media(min-width:270px){
+    .card-img-overlay{
+        font: menu;
+    }
+}
+@media(min-width:991px){
+    
+}

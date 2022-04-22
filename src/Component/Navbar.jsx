@@ -26,7 +26,7 @@ function Navbar() {
         </NavLink>
         <NavLink to="/About">
         <li className="nav-item">
-          <a className="nav-link activeName" >About</a>
+          <a className="nav-link active" >About</a>
         </li>
         </NavLink>
         <NavLink to="/Gallery">
