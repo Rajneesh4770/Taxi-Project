@@ -7,7 +7,6 @@ import Create from './Component/CreateNewAccout/Create'
 import About from './Component/About/About'
 import Gallery from './Component/Gallery/Gallery';
 import Footer from './Component/Footer/Footer';
-import ConfirmOtp from './Component/Booking/Confirmation/ConfirmOtp';
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,7 @@ function App() {
           <Route path='/About' element={<About/>}/>
           <Route path='/Create' element={<Create/>}/>
           <Route path='/Gallery' element={<Gallery/>}/>
-          <Route path ='/ConfirmOtp' element={<ConfirmOtp/>}/>
+          
         </Routes>
         <Footer/>
     </div>
