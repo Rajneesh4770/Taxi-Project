@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { toast } from "react-toastify";
 import Otp from "../Booking/Confirmation/Otp";
 import "./Create.css";
 import axios from "axios";
@@ -10,9 +9,9 @@ function Create() {
   const [email, setEmail] = useState();
   const [number, setNumber] = useState();
   const [password, setPassword] = useState();
-   const [role, setRole] = useState();
-
-   const[state,setState]=useState(false);
+  const [role, setRole] = useState();
+  const[otp,setOtp]=useState("");
+  const[state,setState]=useState(false);
   // const[file,setFile]=useState();
 
 
@@ -20,8 +19,8 @@ function Create() {
     e.preventDefault();
     console.log(email, password, firstName, lastName, number, role);
     axios.post('https://taxiooker123.herokuapp.com/registeruser',{firstName,lastName,email,number,password,role})
-    .then(res=>{
-      console.log(res);
+    .then((res)=>{
+       console.log(res);
       if(res.data==='user already exists with same email'){
         alert('Already Exist')
       }
@@ -30,8 +29,10 @@ function Create() {
         } 
         else
      {
+       setOtp(res.data.otp)
       setState(true)
     }
+
       
     })
     .catch((error)=>{
@@ -126,7 +127,7 @@ function Create() {
                 <div className="col-12">
                   <button
                     type="submit"
-                  //  onClick={()=>setState(false)}
+
                     className="btn btn-primary"
                   >
                     Sign in
@@ -138,7 +139,7 @@ function Create() {
         </div>
         </section>       
   
-      :<Otp/>
+      :<Otp otp={otp}email={email}/>
       }
      
               
