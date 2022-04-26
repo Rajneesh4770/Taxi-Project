@@ -38,7 +38,7 @@ function Otp(props) {
                   onChange={(e)=>setEmail(e.target.value)}
                 />
                 <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
+                  We'll never share your email with anyone else. kdfjkdjjk
                 </div>
               </div>
               
