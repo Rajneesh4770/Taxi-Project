@@ -26,6 +26,7 @@ function Create() {
       }
       else if (res.data==='Please enter all the required details'){
          alert('please fill the data')
+         
         } 
         else
      {
@@ -50,7 +51,7 @@ function Create() {
             <div className="col-12">
               <form className="row g-3" onSubmit={getData}>
                 <div className="col-md-6">
-                  <label for="inputEmail4" className="form-label">
+                  <label htmlFor="inputEmail4" className="form-label">
                     First Name
                   </label>
                   <input
@@ -58,11 +59,11 @@ function Create() {
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     className="form-control"
-                    id="inputEmail4"
+                   
                   />
                 </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" className="form-label">
+                <div className="col-md-6">
+                  <label htmlFor="inputPassword4" className="form-label">
                     Last Name
                   </label>
                   <input
@@ -70,11 +71,11 @@ function Create() {
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     className="form-control"
-                    id="inputPassword4"
+                    
                   />
                 </div>
                 <div className="col-md-6">
-                  <label for="inputEmail4" className="form-label">
+                  <label htmlFor="inputEmail" className="form-label">
                     Email
                   </label>
                   <input
@@ -85,8 +86,8 @@ function Create() {
                     id="inputEmail4"
                   />
                 </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" className="form-label">
+                <div className="col-md-6">
+                  <label htmlFor="inputPassword" className="form-label">
                     Password
                   </label>
                   <input
@@ -94,11 +95,11 @@ function Create() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className="form-control"
-                    id="inputPassword4"
+                    id="inputPassword"
                   />
                 </div>
-                <div class="col-md-6">
-                  <label for="inputPhoneNumber" className="form-label">
+                <div className="col-md-6">
+                  <label htmlFor="inputPhoneNumber" className="form-label">
                     Phone Number
                   </label>
                   <input
@@ -109,8 +110,8 @@ function Create() {
                     id="inputnumber"
                   />
                 </div>
-                <div class="col-md-6">
-                  <label for="inputRole" className="form-label">
+                <div className="col-md-6">
+                  <label htmlFor="inputRole" className="form-label">
                     Role
                   </label>
                   <select
